@@ -2,6 +2,10 @@
   display: flex;
 }
 
+h2{
+  font-size: 2rem;
+}
+
 table {
   width: 700px;
   margin: 0 auto;
@@ -12,6 +16,21 @@ table td[colspan="3"] {
 }
 table td[colspan="1"] {
   display: none;
+}
+
+.image-right-box{
+  width:230px;
+  height:230px;
+  background-image: url(./assets/images/about-me-box.jpeg);
+  background-size: cover;
+  background-position:100%;
+  margin-top: 10%;
+  margin-left: -10%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
 }
 
 .service-box{
@@ -75,7 +94,7 @@ table td[colspan="1"] {
   table-layout: fixed;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .container{
       width: 700px;
       margin:0 auto;
@@ -89,6 +108,10 @@ table td[colspan="1"] {
 
   table td[colspan="3"] {
     display: none;
+  }
+
+  .image-right-box{
+    background-position:80%
   }
 
   .experience-section-padding{
