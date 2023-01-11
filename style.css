@@ -2,8 +2,16 @@
   display: flex;
 }
 
+.direction{
+  flex-direction: column-reverse;
+}
+
 h2{
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+
+p{
+  font-size: 0.9rem
 }
 
 table {
@@ -95,6 +103,19 @@ table td[colspan="1"] {
 }
 
 @media screen and (min-width: 600px) {
+
+  .direction{
+    flex-direction: row;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+  
+  p{
+    font-size: 1.5rem
+  }
+
   .container{
       width: 700px;
       margin:0 auto;
